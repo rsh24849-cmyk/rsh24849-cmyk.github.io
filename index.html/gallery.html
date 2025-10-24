@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Grande Adventures - Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+  <a href="destination.html" class="w3-bar-item w3-button w3-hide-small">DESTINATION</a>
+  <a href="activity.html" class="w3-bar-item w3-button w3-hide-small">ACTIVITY</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-red w3-hide-small">GALLERY</a>
+</div>
+
+<div class="w3-container w3-padding-32 w3-center w3-dark-grey">
+    <h1 class="w3-jumbo">Gallery</h1>
+    <h3 class="w3-xlarge">Extreme Moments A Lo Grande</h3>
+</div>
+
+<div class="w3-row-padding" id="gallery-grid">
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/12/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(1)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/13/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(2)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/15/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(3)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/11/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(4)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+    
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/16/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(5)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+    
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/28/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(6)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+    
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/29/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(7)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+    
+    <div class="w3-col s6 m3 l3 w3-padding-small">
+        <img src="https://picsum.photos/id/37/600/400" 
+             style="width:100%; cursor:pointer;" 
+             onclick="openModal();currentSlide(8)" 
+             class="w3-hover-opacity w3-image">
+    </div>
+</div>
+
+<div id="imageModal" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-display-container">
+    <img id="modalImage" class="w3-image" style="max-width:90%">
+    <div id="caption" class="w3-container w3-display-bottommiddle w3-large w3-text-white w3-padding-16"></div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("imageModal");
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("caption");
+var slideIndex;
+var slides = document.getElementById("gallery-grid").getElementsByTagName("img");
+var captions = [
+    "Volcano Boarding in Nicaragua: The Fastest Descent!", 
+    "Whitewater Rafting on the Pacuare River, Costa Rica", 
+    "Deep Dive into the Great Blue Hole, Belize", 
+    "Canyoning and Waterfall Rappelling in La Fortuna",
+    "Overnight Trek on Acatenango to see Volcán Fuego Erupt",
+    "Catching an Epic Swell in El Salvador",
+    "Ziplining through the Monteverde Cloud Forest Canopy",
+    "Paddling the Waters of Lake Atitlán, Guatemala"
+];
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function currentSlide(n) {
+  slideIndex = n;
+  modalImg.src = slides[slideIndex - 1].src;
+  captionText.innerHTML = captions[slideIndex - 1];
+}
+
+// Functionality to close the modal when clicking outside of it
+modal.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
