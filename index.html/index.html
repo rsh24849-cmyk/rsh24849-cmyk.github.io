@@ -102,32 +102,39 @@
         <a href="contact.html" class="w3-button w3-xlarge w3-red w3-round-large">PLAN YOUR TRIP</a>
     </div>
 </div>
-</div> <script>
-    var sidebar = document.getElementById("mySidebar");
-    var overlay = document.getElementById("myOverlay");
-    var mainContent = document.getElementById("mainContent");
-    var sidebarWidth = "250px"; // Define the sidebar width
+</div> 
+<script>
+    var sidebarWidth = "250px"; 
 
     function w3_open() {
-        sidebar.style.display = "block"; 
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        var mainContent = document.getElementById("mainContent");
+
+        if (sidebar && overlay && mainContent) {
+            sidebar.style.display = "block"; 
+            
         
-        if (window.innerWidth <= 992) {
-            // Mobile: Sidebar slides OVER content
-            overlay.style.display = "block";
-        } else {
-            // Desktop/Tablet: Main content SHIFTS
-            mainContent.style.marginLeft = sidebarWidth;
+            if (window.innerWidth <= 992) {
+                overlay.style.display = "block";
+                mainContent.style.marginLeft = "0"; 
+            } else {
+                mainContent.style.marginLeft = sidebarWidth;
+            }
         }
     }
 
     function w3_close() {
-        sidebar.style.display = "none";
-        overlay.style.display = "none";
-        
-        // Reset margin when closed
-        mainContent.style.marginLeft = "0"; 
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        var mainContent = document.getElementById("mainContent");
+
+        if (sidebar && overlay && mainContent) {
+            sidebar.style.display = "none";
+            overlay.style.display = "none";
+            mainContent.style.marginLeft = "0";
+        }
     }
 </script>
-
 </body>
 </html>
