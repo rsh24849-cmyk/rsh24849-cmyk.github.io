@@ -94,4 +94,41 @@
         <p>Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus.</p>
     </div>
 </div>
+<script>
+    var sidebarWidth = "250px"; 
+
+    function w3_open() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        var mainContent = document.getElementById("mainContent");
+
+        if (sidebar && overlay && mainContent) {
+            sidebar.style.display = "block"; 
+            
+            
+            if (window.innerWidth <= 992) {
+                overlay.style.display = "block";
+                mainContent.style.marginLeft = "0"; 
+            } else {
+                mainContent.style.marginLeft = sidebarWidth; 
+            }
+        }
+    }
+
+    function w3_close() {
+        var sidebar = document.getElementById("mySidebar");
+        var overlay = document.getElementById("myOverlay");
+        var mainContent = document.getElementById("mainContent");
+
+        if (sidebar && overlay && mainContent) {
+            sidebar.style.display = "none";
+            overlay.style.display = "none";
+            mainContent.style.marginLeft = "0"; 
+        }
+    }
+</script>
+</body>
+</html>
+
+
 
