@@ -4,19 +4,28 @@
 <title>Lorem Ipsum - Gallery</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="app.js">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js/app.js">
 </head>
 <body>
-
-<div class="w3-bar w3-border w3-light-grey">
-  <nav class="navbar">
-  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-  <a href="destination.html" class="w3-bar-item w3-button w3-hide-small">DESTINATION</a>
-  <a href="activity.html" class="w3-bar-item w3-button w3-hide-small">ACTIVITY</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-red w3-hide-small">GALLERY</a>
-  </nav>
+<nav>
+  <div class="logo">
+    <img src="favicon.ico.png" alt="logo"
+    <h3> A lo Grande Adventures!</h3>
+  </div>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+<ul class="nav-links">
+<li><a href="index.html" class="w3-bar-item w3-button">HOME</a></li>
+<li><a href="destination.html" class="w3-bar-item w3-button w3-hide-small">DESTINATION</a></li>
+<li><a href="activity.html" class="w3-bar-item w3-button w3-hide-small">ACTIVITIES</a></li>
+<li><a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a></li>
+<li><a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">GALLERY</a></li>
+</ul>
+</nav>
   
 </div>
 
@@ -90,42 +99,9 @@
   </div>
 </div>
 
-<script>
-  
-var modal = document.getElementById("imageModal");
-var modalImg = document.getElementById("modalImage");
-var captionText = document.getElementById("caption");
-var slideIndex;
-var slides = document.getElementById("gallery-grid").getElementsByTagName("img");
-var captions = [
-    "Nemo enim ipsam voluptatem", 
-    "dolor sit amet consectetur adipisci", 
-    "Ut enim ad minima veniam", 
-    "Nostrum exercitationem ullam corporis ",
-    "Temporibus autem quibusdam",
-    "Voluptates repudiandae sint",
-    "Aut reiciendis voluptatibus",
-    "Maxime placeat, facere possimus"
-];
-
-function openModal() {
-  modal.style.display = "block";
-}
-
-function currentSlide(n) {
-  slideIndex = n;
-  modalImg.src = slides[slideIndex - 1].src;
-  captionText.innerHTML = captions[slideIndex - 1];
-}
-
-
-modal.onclick = function() {
-  modal.style.display = "none";
-}
-</script>
-
 </body>
 </html>
+
 
 
 
