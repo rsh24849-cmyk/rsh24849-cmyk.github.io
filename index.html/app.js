@@ -1,15 +1,13 @@
-const hamburger = document.querySelector('.hamburger')
-const navLinks = document.querySelector('.nav-links')
-let menuOpen = false;
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener('click', () => {
-    if (menuOpen == false){
-        navLinks.computedStyleMap.display = "block";
-        menuOpen = true;
-    }
-    else if (menuOpen ==true){
-        navLinks.computedStyleMap.display = "none";
-        menuOpen =false;
-    }
-    });
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    })
 
+document.querySelectorAll(".nav-link").forEach(n => n.
+    addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    }))
