@@ -3,32 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>W3.CSS - Home</title>
+<title>W3.CSS-Home</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="js/app.js">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.js">
 </head>
 <body>
-<nav>
-  <div class="logo">
-    <img src="favicon.ico.png" alt="logo"
-    <h3> A lo Grande Adventures!</h3>
+<header>
+ 
+<nav class="navbar">
+  <a href="/" class="navbar-brand">
+            <img src="images/logo.png" alt="Alo Grande Adventures Logo" class="logo-img">
+        </a>
+
+        <button class="menu-toggle">☰</button>
+
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="destination.html" class="nav-link">Destination</a>
+    </li>
+    <li class="nav-item">
+      <a href="activity.html" class="nav-link">Activities</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a href="gallery.html" class="nav-link">Gallery </a>
+    </li>
+  </ul>
+  <div -class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
   </div>
-  <div class="hamburger">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-<ul class="nav-links">
-<li><a href="index.html" class="w3-bar-item w3-button">HOME</a></li>
-<li><a href="destination.html" class="w3-bar-item w3-button w3-hide-small">DESTINATION</a></li>
-<li><a href="activity.html" class="w3-bar-item w3-button w3-hide-small">ACTIVITIES</a></li>
-<li><a href="contact.html" class="w3-bar-item w3-button w3-hide-small">CONTACT</a></li>
-<li><a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">GALLERY</a></li>
-</ul>
 </nav>
-  
-</div>
+
 
 <div class="w3-container w3-padding-32 w3-center w3-dark-grey">
     <h1 class="w3-jumbo">Gallery</h1>
@@ -99,12 +113,64 @@
     <div id="caption" class="w3-container w3-display-bottommiddle w3-large w3-text-white w3-padding-16"></div>
   </div>
 </div>
+<div class="site-footer">
+    <div class="footer-content">
+        
+        <div class="footer-col">
+            <h4>A lo grande Adventures!</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about-me/myjourney">My Journey</a></li>
+                <li><a href="/about-me/values">Values</a></li>
+                <li><a href="/about-me/mission-and-vision">Mission and Vision</a></li>
+                <li><a href="/contact-us">Contact Page</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Your Preferences</h4>
+            <ul>
+                <li><a href="/your-preferences/places">Places</a></li>
+                <li><a href="/your-preferences/activities">Activities</a></li>
+                <li><a href="/your-preferences/food">Food</a></li>
+                <li><a href="/your-preferences/accomodations">Accommodations</a></li>
+                <li><a href="/your-preferences/prices">Prices</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Booking Portal</h4>
+            <ul>
+                <li><a href="/portal/flight-booking">Flight Booking</a></li>
+                <li><a href="/portal/hotel-reservations">Hotel Reservations</a></li>
+                <li><a href="/portal/rent-a-car">Rent-a-Car</a></li>
+                <li><a href="/portal/tour-guide">Tour Guides</a></li>
+                <li><a href="/portal/additional-events">Additional Events</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>Info & Connect</h4>
+            <ul>
+                <li><a href="/portal/log-in-create-account">Login / Register</a></li>
+                <li><a href="https://www.morethanmainstreet.com/adrenaline-adventures-thrill-seeking-activities/" target="_blank" rel="noopener noreferrer">Our Blog</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/email-info">Contact(E-mail): alograndeadv25@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 A lo grande Adventures! All rights reserved.</p>
+        <p>Follow us on: <a href="#" style="color: aqua;">Instagram</a> | <a href="#" style="color: aqua;">X</a></p>
+    </div>
+</div>
+
 
 </body>
 </html>
-
-
-
 
 
 
