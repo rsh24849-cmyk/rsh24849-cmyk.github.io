@@ -124,7 +124,7 @@ a{
 .hero-banner {
     height: 70vh; 
     width: 100%;
-    background-image: url('images/sunrise-4987384_1280.jpg');
+    background-image: url('sunrise-4987384_1280.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -220,3 +220,4 @@ a{
                 margin-right: 0;
             }
         }
+
