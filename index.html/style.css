@@ -247,4 +247,11 @@ body {
                 margin-left: 0;
                 margin-right: 0;
             }
-        }
+
+      
+.show-panel{
+    .panel { max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
+    .show-panel { max-height: 500px; 
+                }
+  });
+}
