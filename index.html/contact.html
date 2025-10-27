@@ -3,34 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>W3.CSS-Home</title>
-<link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
+<title>Contact</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.js">
+</head>
+<body class="w3-black w3-text-white">
 
+<!-- Navigation -->
+<div class="w3-bar w3-black w3-top">
+  <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
+  <a href="destination.html" class="w3-bar-item w3-button w3-hide-small">Destination</a>
+  <a href="activity.html" class="w3-bar-item w3-button w3-hide-small">Activities</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-hide-small">Gallery</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+</div>
 
-<div class="w3-top w3-light-grey">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right"
-       href="javascript:void(0)" onclick="toggleNav()">☰</a>
-    <a href="index.html" class="w3-bar-item w3-button brand">A lo grande adventures !</a>
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button w3-blue">Home</a>
-      <a href="destination.html" class="w3-bar-item w3-button">About</a>
-      <a href="activity.html" class="w3-bar-item w3-button">Activities</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-    </div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="destination.html" class="w3-bar-item w3-button">Destination</a>
+  <a href="activity.html" class="w3-bar-item w3-button">Activities</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+</div>
+
+<!--Breadcrumbs-->
+<div class="container">
+  <ol class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destination.html">Destination</a></li>
+    <li><a href="activity.html">Activities</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="gallery.html">Home</a></li>
+  </ol>
+</div>
+
+<!--Dropdown button-->
+<div class="dropdown">
+  <button onclick="classList.toggle()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <a href="index.html">About</a>
+    <a href="destination.html">Base</a>
+    <a href="activity.html">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="gallery.html">Custom</a>
+    
   </div>
-  <div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-      <a href="index.html" class="w3-bar-item w3-button w3-blue">Home</a>
-      <a href="destination.html" class="w3-bar-item w3-button">About</a>
-      <a href="activity.html" class="w3-bar-item w3-button">Activities</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-  </div>
+</div>
 
+<!--Content-->
 <div class="w3-container w3-padding-32 w3-center w3-pale-blue">
-    <h1 class="w3-jumbo">CONTACT A LO GRANDE</h1>
+    <h1 class="w3-jumbo">Contact Us</h1>
     <h3 class="w3-xlarge">Ready for your extreme escape?</h3>
 </div>
 
@@ -49,7 +76,7 @@
         <option value="4">General Inquiry</option>
       </select></p>
       <p><textarea class="w3-input w3-border" style="height:100px" placeholder="Message" required name="Message"></textarea></p>
-      <p><button class="w3-button w3-red w3-section" type="submit">SEND MESSAGE</button></p>
+      <p><button class="w3-button w3-black w3-section" type="submit">SEND MESSAGE</button></p>
     </form>
   </div>
 
@@ -60,7 +87,7 @@
         
     </div>
     <p><i class="fa fa-phone w3-margin-right"></i> Phone: +506 5555 1234</p>
-    <p><i class="fa fa-envelope w3-margin-right"></i> Email: info@lagrande.com</p>
+    <p><i class="fa fa-envelope w3-margin-right"></i> Email:alograndeadv25@gmail.com</p>
   </div>
 
 </div>
@@ -72,8 +99,7 @@
     </div>
 </div>
 
-</body>
-</html>  
+ <!--Sitemap-->
 <div class="site-footer">
     <div class="footer-content">
         
@@ -82,9 +108,9 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about-me/myjourney">My Journey</a></li>
-                <li><a href="/about-me/values">Values</a></li>
-                <li><a href="/about-me/mission-and-vision">Mission and Vision</a></li>
-                <li><a href="/contact-us">Contact Page</a></li>
+                <li><a href="/contact.html">Values</a></li>
+                <li><a href="/contact.html">Mission and Vision</a></li>
+                <li><a href="/contact.html">Contact Page</a></li>
                 
             </ul>
         </div>
@@ -92,33 +118,33 @@
         <div class="footer-col">
             <h4>Your Preferences</h4>
             <ul>
-                <li><a href="/your-preferences/places">Places</a></li>
-                <li><a href="/your-preferences/activities">Activities</a></li>
-                <li><a href="/your-preferences/food">Food</a></li>
-                <li><a href="/your-preferences/accomodations">Accommodations</a></li>
-                <li><a href="/your-preferences/prices">Prices</a></li>
+                <li><a href="/destination.html">Places</a></li>
+                <li><a href="/activity.html">Activities</a></li>
+                <li><a href="/activity.html">Food</a></li>
+                <li><a href="/destination.html">Accommodations</a></li>
+                <li><a href="/destination.html">Prices</a></li>
             </ul>
         </div>
         
         <div class="footer-col">
             <h4>Booking Portal</h4>
             <ul>
-                <li><a href="/portal/flight-booking">Flight Booking</a></li>
-                <li><a href="/portal/hotel-reservations">Hotel Reservations</a></li>
-                <li><a href="/portal/rent-a-car">Rent-a-Car</a></li>
-                <li><a href="/portal/tour-guide">Tour Guides</a></li>
-                <li><a href="/portal/additional-events">Additional Events</a></li>
+                <li><a href="/destination.html">Flight Booking</a></li>
+                <li><a href="/destination.html">Hotel Reservations</a></li>
+                <li><a href="/destination.html">Rent-a-Car</a></li>
+                <li><a href="/destination.html">Tour Guides</a></li>
+                <li><a href="/destination.html">Additional Events</a></li>
             </ul>
         </div>
         
         <div class="footer-col">
             <h4>Info & Connect</h4>
             <ul>
-                <li><a href="/portal/log-in-create-account">Login / Register</a></li>
+                <li><a href="contact.html">Login / Register</a></li>
                 <li><a href="https://www.morethanmainstreet.com/adrenaline-adventures-thrill-seeking-activities/" target="_blank" rel="noopener noreferrer">Our Blog</a></li>
                 <li><a href="/privacy-policy">Privacy Policy</a></li>
                 <li><a href="/terms-of-service">Terms of Service</a></li>
-                <li><a href="/email-info">Contact(E-mail): alograndeadv25@gmail.com</a></li>
+                <li><a href="/contact.html">Contact(E-mail): alograndeadv25@gmail.com</a></li>
             </ul>
         </div>
     </div>
@@ -128,6 +154,7 @@
         <p>Follow us on: <a href="#" style="color: aqua;">Instagram</a> | <a href="#" style="color: aqua;">X</a></p>
     </div>
 </div>
+
 
 </body>
 </html>
