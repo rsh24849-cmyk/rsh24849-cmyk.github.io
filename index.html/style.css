@@ -159,13 +159,13 @@ body {
   content: "\2212";
 }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+.panel { max-height: 0;
+        overflow: hidden;
+         transition: max-height 0.2s ease-out; 
+           }
+.show-panel { max-height: 500px; 
+                }
+
 
 body {
             font-family: Arial, sans-serif;
@@ -249,9 +249,7 @@ body {
             }
 
       
-.show-panel{
-    .panel { max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out; }
-    .show-panel { max-height: 500px; 
-                }
-  });
-}
+
+    
+
+
