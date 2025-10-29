@@ -7,7 +7,7 @@ body {
 
 
 .active {
-  background-color: #04AA6D;
+  background-color: #262626;
   color: white;
 }
 
@@ -17,7 +17,7 @@ body {
   color: #262626;
   cursor: pointer;
   font-size: 15px;
-  outline: focus;
+  outline: none;
   padding: 18px;
   text-align: left;
   transition: 0.4s;
@@ -45,7 +45,7 @@ body {
 }
 
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: #262626;
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -197,7 +197,7 @@ body {
   text-decoration: none;
 }
 
-.topnav a:icon {
+.topnav a.icon {
   background: black;
   display: block;
   position: absolute;
@@ -253,4 +253,5 @@ body {
     width: 100%;
   }
 }
+
 
